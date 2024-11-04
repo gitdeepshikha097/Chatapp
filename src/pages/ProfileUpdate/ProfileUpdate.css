@@ -1,0 +1,121 @@
+/* ProfileUpdate.css */
+.profile {
+    min-height: 100vh;
+    background: url(/background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #077eff;
+    margin: 20px auto;
+}
+
+.profile-avatar-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #077eff;
+}
+
+.profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.profile form h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #555;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.profile input, .profile textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.profile input:focus, .profile textarea:focus {
+    border-color: #077eff;
+    background-color: #fff;
+}
+
+.profile textarea {
+    resize: none;
+    height: 80px;
+}
+
+.profile form button {
+    border: none;
+    color: white;
+    background-color: #077eff;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.profile form button:hover {
+    background-color: #005bb5;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    .profile-container {
+        max-width: 90%;
+    }
+    
+    .profile form h3 {
+        font-size: 20px;
+    }
+    
+    .profile input, .profile textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .profile form button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
